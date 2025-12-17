@@ -1,0 +1,35 @@
+body {
+    background-image: url('image.png');
+    
+    /* CHANGE THIS LINE: */
+    background-size: 100% 100%; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add glow to the card */
+.glass-card {
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Make the button pulse slightly */
+.magic-btn {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.magic-btn:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
